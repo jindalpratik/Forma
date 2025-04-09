@@ -1,0 +1,92 @@
+[gd_scene load_steps=13 format=3 uid="uid://bmpm8ruq780x6"]
+
+[ext_resource type="Texture2D" uid="uid://c5kxbxg4p2e5e" path="res://assets/Enemies/FlyingSkeleton.png" id="1_ejn2e"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_e2aew"]
+atlas = ExtResource("1_ejn2e")
+region = Rect2(0, 0, 42, 42)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_teh48"]
+atlas = ExtResource("1_ejn2e")
+region = Rect2(42, 0, 42, 42)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_gtsde"]
+atlas = ExtResource("1_ejn2e")
+region = Rect2(84, 0, 42, 42)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_38m6e"]
+atlas = ExtResource("1_ejn2e")
+region = Rect2(126, 0, 42, 42)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_7g13e"]
+atlas = ExtResource("1_ejn2e")
+region = Rect2(0, 42, 42, 42)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_rugap"]
+atlas = ExtResource("1_ejn2e")
+region = Rect2(42, 42, 42, 42)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_2p1ht"]
+atlas = ExtResource("1_ejn2e")
+region = Rect2(84, 42, 42, 42)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_omag2"]
+atlas = ExtResource("1_ejn2e")
+region = Rect2(126, 42, 42, 42)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_36h4b"]
+atlas = ExtResource("1_ejn2e")
+region = Rect2(0, 84, 42, 42)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_04lw4"]
+atlas = ExtResource("1_ejn2e")
+region = Rect2(42, 84, 42, 42)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_5ophi"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_e2aew")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_teh48")
+}, {
+"duration": 1.4,
+"texture": SubResource("AtlasTexture_gtsde")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_38m6e")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_7g13e")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_rugap")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_2p1ht")
+}, {
+"duration": 1.4,
+"texture": SubResource("AtlasTexture_omag2")
+}, {
+"duration": 1.4,
+"texture": SubResource("AtlasTexture_36h4b")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_04lw4")
+}],
+"loop": true,
+"name": &"default",
+"speed": 8.0
+}, {
+"frames": [],
+"loop": true,
+"name": &"new_animation",
+"speed": 5.0
+}]
+
+[node name="FlyingSkeleton" type="Node2D"]
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+sprite_frames = SubResource("SpriteFrames_5ophi")
+frame_progress = 0.603112
